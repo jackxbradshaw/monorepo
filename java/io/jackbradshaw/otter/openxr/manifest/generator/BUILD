@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules()
+dagger_rules(repo_name="@maven")
 
 kt_jvm_library(
     name = "generator",
@@ -33,7 +33,7 @@ kt_jvm_library(
         ":generator",
         "//java/io/jackbradshaw/klu/flow",
         "//java/io/jackbradshaw/otter:scope",
-        "//java/io/jackbradshaw/otter/config:kt_jvm_proto",
+        #"//java/io/jackbradshaw/otter/config:kt_jvm_proto",
         "//java/io/jackbradshaw/otter/openxr/manifest/encoder",
         "//java/io/jackbradshaw/otter/openxr/model:java_lite_proto",
         "//java/io/jackbradshaw/otter/openxr/standard",
