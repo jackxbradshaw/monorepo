@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 kt_jvm_library(
     name = "timing",
@@ -10,7 +10,7 @@ kt_jvm_library(
     ],
     visibility = ["//java/io/jackbradshaw/otter:__subpackages__"],
     deps = [
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -29,8 +29,8 @@ kt_jvm_library(
         "//java/io/jackbradshaw/otter:scope",
         "//java/io/jackbradshaw/otter/coroutines",
         "//java/io/jackbradshaw/otter/engine/core",
-        "@maven//:javax_inject_javax_inject",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:javax_inject_javax_inject",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -48,6 +48,6 @@ kt_jvm_library(
         ":impl",
         ":timing",
         "//java/io/jackbradshaw/otter/qualifiers",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )

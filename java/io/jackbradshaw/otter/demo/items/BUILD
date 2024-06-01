@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 kt_jvm_library(
     name = "items",
@@ -44,9 +44,9 @@ kt_jvm_library(
         "//java/io/jackbradshaw/otter/scene/item",
         "//java/io/jackbradshaw/otter/scene/item:impl",
         "//java/io/jackbradshaw/otter/timing",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_bullet",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )
 
@@ -64,6 +64,6 @@ kt_jvm_library(
         ":dagger",
         ":impl",
         ":items",
-        "@maven//:javax_inject_javax_inject",
+        "@io_jackbradshaw_maven//:javax_inject_javax_inject",
     ],
 )

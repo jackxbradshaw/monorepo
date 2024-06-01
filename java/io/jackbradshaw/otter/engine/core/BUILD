@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 kt_jvm_library(
     name = "core",
@@ -12,10 +12,10 @@ kt_jvm_library(
     deps = [
         ":dagger",
         "//java/io/jackbradshaw/otter:scope",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_bullet",
-        "@maven//:org_jmonkeyengine_jme3_core",
-        "@maven//:org_jmonkeyengine_jme3_vr",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_vr",
     ],
 )
 
@@ -35,9 +35,9 @@ kt_jvm_library(
         "//java/io/jackbradshaw/otter/config:java_lite_proto",
         "//java/io/jackbradshaw/otter/coroutines",
         "//java/io/jackbradshaw/otter/openxr/manifest/installer",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_core",
-        "@maven//:org_jmonkeyengine_jme3_vr",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_vr",
     ],
 )
 
@@ -54,8 +54,8 @@ kt_jvm_library(
         ":core",
         ":dagger",
         ":impl",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_core",
-        "@maven//:org_jmonkeyengine_jme3_vr",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_vr",
     ],
 )

@@ -39,7 +39,7 @@ kt_jvm_library(
     deps = [
         ":java_lite_proto",
         "//java/io/jackbradshaw/otter/math/model:proto_extensions",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )

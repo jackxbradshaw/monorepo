@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 kt_jvm_library(
     name = "materials",
@@ -14,8 +14,8 @@ kt_jvm_library(
         "//javatests:__subpackages__",
     ],
     deps = [
-        "@maven//:javax_inject_javax_inject",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:javax_inject_javax_inject",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )
 
@@ -34,8 +34,8 @@ kt_jvm_library(
         "//java/io/jackbradshaw/otter/demo:scope",
         "//java/io/jackbradshaw/otter/demo/constants",
         "//java/io/jackbradshaw/otter/engine/core",
-        "@maven//:javax_inject_javax_inject",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:javax_inject_javax_inject",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )
 
@@ -52,6 +52,6 @@ kt_jvm_library(
     deps = [
         ":impl",
         ":materials",
-        "@maven//:javax_inject_javax_inject",
+        "@io_jackbradshaw_maven//:javax_inject_javax_inject",
     ],
 )

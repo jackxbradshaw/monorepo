@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 kt_jvm_library(
     name = "scope",
@@ -68,12 +68,12 @@ java_binary(
     ],
     runtime_deps = [
         ":main",
-        "@maven//:org_jmonkeyengine_jme3_bullet",
-        "@maven//:org_jmonkeyengine_jme3_bullet_native",
-        "@maven//:org_jmonkeyengine_jme3_core",
-        "@maven//:org_jmonkeyengine_jme3_desktop",
-        "@maven//:org_jmonkeyengine_jme3_lwjgl3",
-        "@maven//:org_jmonkeyengine_jme3_vr",
-        "@maven//:org_lwjgl_lwjgl",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet_native",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_desktop",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_lwjgl3",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_vr",
+        "@io_jackbradshaw_maven//:org_lwjgl_lwjgl",
     ],
 )

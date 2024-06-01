@@ -8,9 +8,9 @@ kt_jvm_test(
     deps = [
         "//java/io/jackbradshaw/otter/openxr/model:java_lite_proto",
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -22,9 +22,9 @@ kt_jvm_test(
     deps = [
         "//java/io/jackbradshaw/otter/openxr/model:java_lite_proto",
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -35,9 +35,9 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -48,9 +48,9 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -61,9 +61,9 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -74,9 +74,9 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -87,9 +87,9 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
 
@@ -100,8 +100,8 @@ kt_jvm_test(
     ],
     deps = [
         "//java/io/jackbradshaw/otter/openxr/standard",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )

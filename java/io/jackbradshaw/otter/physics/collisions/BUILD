@@ -55,7 +55,7 @@ kt_jvm_library(
     visibility = ["//java/io/jackbradshaw/otter:__subpackages__"],
     deps = [
         ":interaction_java_lite_proto",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )
 
@@ -70,9 +70,9 @@ kt_jvm_library(
         ":interaction_extensions",
         ":interaction_java_lite_proto",
         "//java/io/jackbradshaw/otter/engine/core",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_bullet",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )
 
@@ -86,8 +86,8 @@ kt_jvm_library(
         ":collision",
         ":physics_collision_event_extensions",
         "//java/io/jackbradshaw/otter/engine/core",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:org_jmonkeyengine_jme3_bullet",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_bullet",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )

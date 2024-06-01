@@ -31,8 +31,9 @@ bazel_dep(name = "rules_proto", version = "6.0.0")
 bazel_dep(name = "rules_testing", version = "0.6.0")
 bazel_dep(name = "grpc-java", version = "1.62.2", repo_name="io_grpc_grpc_java")
 
-maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
-maven.install(
+io_jackbradshaw_maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+io_jackbradshaw_maven.install(
+    name="io_jackbradshaw_maven",
     artifacts = [
         "commons-codec:commons-codec:1.15",
         "com.google.auto.value:auto-value-annotations:%s" % AUTO_VALUE_VERSION,
@@ -123,7 +124,7 @@ maven.install(
         "https://repository.mulesoft.org/nexus/content/repositories/public/",
     ],
 )
-use_repo(maven, "maven")
+use_repo(io_jackbradshaw_maven, "io_jackbradshaw_maven")
 
 # TODO migrate to bazelmod when these repos support it
 http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")

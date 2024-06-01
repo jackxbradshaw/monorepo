@@ -2,7 +2,7 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 load("@dagger//:workspace_defs.bzl", "dagger_rules")
 load("//:bazel/auto_factory.bzl", "auto_factory")
 
-dagger_rules(repo_name="@maven")
+dagger_rules(repo_name="@io_jackbradshaw_maven")
 
 auto_factory()
 
@@ -48,6 +48,6 @@ kt_jvm_library(
         ":java_lite_proto",
         "//java/io/jackbradshaw/otter/math/model:java_lite_proto",
         "//java/io/jackbradshaw/otter/math/model:proto_extensions",
-        "@maven//:org_jmonkeyengine_jme3_core",
+        "@io_jackbradshaw_maven//:org_jmonkeyengine_jme3_core",
     ],
 )

@@ -11,6 +11,6 @@ kt_jvm_library(
         "//javatests:__subpackages__",
     ],
     deps = [
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )

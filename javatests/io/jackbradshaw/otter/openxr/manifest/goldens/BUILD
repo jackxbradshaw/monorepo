@@ -30,8 +30,8 @@ kt_jvm_library(
         "//java/io/jackbradshaw/otter/openxr/manifest/installer",
         "//java/io/jackbradshaw/otter/openxr/standard",
         "@bazel_tools//tools/java/runfiles",
-        "@maven//:com_google_truth_truth",
-        "@maven//:junit_junit",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@io_jackbradshaw_maven//:com_google_truth_truth",
+        "@io_jackbradshaw_maven//:junit_junit",
+        "@io_jackbradshaw_maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )
